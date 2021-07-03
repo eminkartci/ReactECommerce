@@ -2,15 +2,26 @@ import React from 'react'
 import { View, Text , Image, StyleSheet } from 'react-native'
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
 
-export default function ProductItem() {
+interface ProductItemProps {
+ service: {
+     title: string,
+     imageURL: string,
+     price: string,
+     oldPrice: string,
+     rating: number
+ }
+}
+
+export default function ProductItem(props: ProductItemProps) {
+
     return (
         <View style={styles.root}>
 
-                <Image style={styles.image} source={{uri:'https://thesmartstarts.com/wp-content/uploads/2020/09/smartrecruit-1500x630.jpg'}} />
+                <Image style={styles.image} source={{uri:props.service.imageURL}} />
 
                 <View style={styles.content}>
 
-                    <Text style={styles.title} numberOfLines={3}> - - - -  Title - - - -  </Text>
+                    <Text style={styles.title} numberOfLines={3}> {props.service.title} </Text>
 
                     {/* Rating  */}
                     <View style={styles.rating}>
@@ -22,13 +33,13 @@ export default function ProductItem() {
                         <FontAwesome style={styles.star} name="star-o" size={18} color={"#e47911"}/>
 
 
-                        <Text> ---- </Text>
+                        <Text> {props.service.rating} </Text>
 
                     </View>
                         
                     <View style={styles.prices}>
-                        <Text style={styles.price}> Price __ $  </Text>
-                        <Text style={styles.oldPrice}> *** $ </Text>
+                        <Text style={styles.price}> Price {props.service.price} </Text>
+                        <Text style={styles.oldPrice}> {props.service.oldPrice} </Text>
                     </View>
                     
                 </View>
