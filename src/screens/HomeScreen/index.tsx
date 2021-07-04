@@ -10,6 +10,7 @@ const index = () => {
            <FlatList 
             data={services}
             renderItem={({item}) => <ProductItem service={item}/> }
+            keyExtractor={({id}) => id}
            />
         </View> 
     );

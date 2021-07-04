@@ -1,5 +1,6 @@
 export const services  = [
     {
+        id: '1',
         title: "Math Course",
         imageURL: "/Users/eminkartci/Desktop/CodEnv/ReactECommerce/src/assets/images/matematik.jpg",
         price: "20₺",
@@ -9,6 +10,7 @@ export const services  = [
         rating: 2,
     },
     {
+        id: '2',
         title: "Java Course",
         imageURL: "/Users/eminkartci/Desktop/CodEnv/ReactECommerce/src/assets/images/java.png",
         price: "30₺",
@@ -17,6 +19,7 @@ export const services  = [
         rating: 523,
     },
     {
+        id: '3',
         title: "LGS Courses",
         imageURL: "https://gayeokullari.com.tr/img/etkinlikler/lgs_online_logo.png",
         price: "15₺",
@@ -25,6 +28,7 @@ export const services  = [
         rating: 53,
     },
     {
+        id: '4',
         title: "YKS Course",
         imageURL: "/Users/eminkartci/Desktop/CodEnv/ReactECommerce/src/assets/images/yks.png",
         price: "25₺",
@@ -33,6 +37,7 @@ export const services  = [
         rating: 1223,
     },
     {
+        id: '5',
         title: "Python Course",
         imageURL: "/Users/eminkartci/Desktop/CodEnv/ReactECommerce/src/assets/images/python.jpg",
         price: "30₺",

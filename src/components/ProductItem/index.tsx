@@ -4,6 +4,7 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome'
 
 interface ProductItemProps {
  service: {
+     id: string,
      title: string,
      imageURL: string,
      price: string,
@@ -29,7 +30,7 @@ export default function ProductItem(props: ProductItemProps) {
 
                         {[0,0,0,0,0].map((el,i)=>
 
-                            <FontAwesome style={styles.star} name={i < Math.floor(props.service.star) ? 'star' : 'star-o'} size={18} color={"#e47911"}/>
+                            <FontAwesome key={`${props.service.id}-${i}`} style={styles.star} name={i < Math.floor(props.service.star) ? 'star' : 'star-o'} size={18} color={"#e47911"}/>
 
                         )}
                         
