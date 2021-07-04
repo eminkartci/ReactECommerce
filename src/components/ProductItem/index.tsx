@@ -33,13 +33,13 @@ export default function ProductItem(props: ProductItemProps) {
                         <FontAwesome style={styles.star} name="star-o" size={18} color={"#e47911"}/>
 
 
-                        <Text> {props.service.rating} </Text>
+                        <Text style={styles.ratingText}> {props.service.rating} </Text>
 
                     </View>
                         
                     <View style={styles.prices}>
                         <Text style={styles.price}> Price {props.service.price} </Text>
-                        <Text style={styles.oldPrice}> {props.service.oldPrice} </Text>
+                        {props.service.oldPrice && (<Text style={styles.oldPrice}> {props.service.oldPrice} </Text>)}
                     </View>
                     
                 </View>
@@ -57,6 +57,7 @@ const styles = StyleSheet.create({
         borderRadius: 15,
         backgroundColor: '#fff',
         width: '95%',
+        alignItems: 'center',
     },
     image: {
         flex: 2,
@@ -80,8 +81,11 @@ const styles = StyleSheet.create({
     },
     rating:{
         flexDirection: 'row',
-        alignItems: 'center',
         marginVertical: 10,
+        alignItems: 'center'
+    },
+    ratingText:{
+        color: 'gray',
     },
     star:{
         margin: 3,
@@ -94,6 +98,6 @@ const styles = StyleSheet.create({
     },
     prices:{
         flexDirection: 'row',
-        justifyContent: 'space-evenly'
+        justifyContent: 'flex-start'
     }
 });
