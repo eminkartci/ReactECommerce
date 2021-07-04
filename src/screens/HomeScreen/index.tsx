@@ -4,7 +4,7 @@ import ProductItem from '../../components/ProductItem';
 
 import { services } from '../../assets/data/services'
 
-const index = () => {
+const HomeScreen = () => {
     return (
         <View>
            <FlatList 
@@ -20,4 +20,4 @@ const styles = StyleSheet.create({
     
 });
 
-export default index;
+export default HomeScreen;
