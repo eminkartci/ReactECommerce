@@ -14,8 +14,6 @@ const index = () => {
                 <ProductItem service={services[3]}/>
                 <ProductItem service={services[0]} />
                 <ProductItem service={services[1]}/>
-                <ProductItem service={services[2]}/>
-                <ProductItem service={services[3]}/>
             </ScrollView>
         </View> 
     );

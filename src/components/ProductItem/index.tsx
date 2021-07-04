@@ -8,7 +8,8 @@ interface ProductItemProps {
      imageURL: string,
      price: string,
      oldPrice: string,
-     rating: number
+     rating: number,
+     star: number
  }
 }
 
@@ -26,11 +27,12 @@ export default function ProductItem(props: ProductItemProps) {
                     {/* Rating  */}
                     <View style={styles.rating}>
 
-                        <FontAwesome style={styles.star} name="star" size={18} color={"#e47911"}/>
-                        <FontAwesome style={styles.star} name="star" size={18} color={"#e47911"}/>
-                        <FontAwesome style ={styles.star} name="star" size={18} color={"#e47911"}/>
-                        <FontAwesome style={styles.star} name="star-half-full" size={18} color={"#e47911"}/>
-                        <FontAwesome style={styles.star} name="star-o" size={18} color={"#e47911"}/>
+                        {[0,0,0,0,0].map((el,i)=>
+
+                            <FontAwesome style={styles.star} name={i < Math.floor(props.service.star) ? 'star' : 'star-o'} size={18} color={"#e47911"}/>
+
+                        )}
+                        
 
 
                         <Text style={styles.ratingText}> {props.service.rating} </Text>
