@@ -82,6 +82,16 @@ const styles = StyleSheet.create({
         fontWeight: '500',
         color: 'rgba(10,100,50,0.9)',
     },
+    oldPrice:{
+        fontSize: 16,
+        fontWeight: '100',
+        textDecorationLine: 'line-through',
+        color: '#000',
+    },
+    prices:{
+        flexDirection: 'row',
+        justifyContent: 'flex-start'
+    },
     rating:{
         flexDirection: 'row',
         marginVertical: 10,
@@ -93,14 +103,5 @@ const styles = StyleSheet.create({
     star:{
         margin: 3,
     },
-    oldPrice:{
-        fontSize: 16,
-        fontWeight: '100',
-        textDecorationLine: 'line-through',
-        color: '#000',
-    },
-    prices:{
-        flexDirection: 'row',
-        justifyContent: 'flex-start'
-    }
+    
 });
