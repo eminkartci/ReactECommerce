@@ -3,6 +3,7 @@ import { View, Text, StyleSheet } from 'react-native'
 import styles from './styles';
 import { services } from '../../assets/data/services';
 import { Picker } from '@react-native-picker/picker';
+import QuantitiySelector from '../../components/QuantitiySelector';
 
 const ProductScreen = () => {
 
@@ -39,7 +40,8 @@ const ProductScreen = () => {
                 {service.description}
             </Text>
 
-            {/* Quantiti */}
+            {/* Quantitiy Selection */}
+            <QuantitiySelector />
 
             {/* Button */}
             
