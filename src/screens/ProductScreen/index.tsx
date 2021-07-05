@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { View, Text, StyleSheet } from 'react-native'
 import styles from './styles';
 import { services } from '../../assets/data/services';
@@ -7,6 +7,8 @@ import { Picker } from '@react-native-picker/picker';
 const ProductScreen = () => {
 
     const service = services[0];
+    const [selectedOption,setSelectedOption] = useState('')
+    console.log('Selected Option: ', selectedOption);
 
     return (
         <View>
@@ -17,7 +19,12 @@ const ProductScreen = () => {
             {/* Slider */}
 
             {/* Options */}
-            <Picker>
+            <Picker
+                selectedValue={selectedOption}
+                onValueChange={(itemValue,itemIndex) => {
+                    setSelectedOption(itemValue);
+                }}
+            >
                 {service.options.map(option => <Picker.Item label={option} value={option} /> )}
             </Picker>
 
