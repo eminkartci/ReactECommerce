@@ -4,6 +4,7 @@ import styles from './styles';
 import { services } from '../../assets/data/services';
 import { Picker } from '@react-native-picker/picker';
 import QuantitiySelector from '../../components/QuantitiySelector';
+import Button from '../../components/Button';
 
 const ProductScreen = () => {
 
@@ -46,6 +47,8 @@ const ProductScreen = () => {
             <QuantitiySelector quantitiy={quantitiy} setQuantitiy={setQuantitiy} />
 
             {/* Button */}
+            <Button text="Add to Card" onPress = {() => {console.log("Added to Card")}} />
+            <Button text="Buy Now" onPress = {() => {console.log("Buying now")}} />
             
         </View> 
     );
