@@ -1,6 +1,11 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
+    root:{
+        padding: 20,
+        backgroundColor: '#fff',
+
+    },
     title:{
         
     },
@@ -20,8 +25,9 @@ const styles = StyleSheet.create({
         color: '#000',
     },
     description:{
-        
-    }
+        marginVertical: 20,
+        lineHeight: 20,
+    },
 });
 
 export default styles;

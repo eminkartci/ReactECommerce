@@ -15,7 +15,7 @@ const ProductScreen = () => {
     console.log('Selected Option: ', selectedOption);
 
     return (
-        <View>
+        <View style={styles.root}>
 
             {/* Title */}
             <Text style={styles.title} > {service.title} </Text>
@@ -47,7 +47,7 @@ const ProductScreen = () => {
             <QuantitiySelector quantitiy={quantitiy} setQuantitiy={setQuantitiy} />
 
             {/* Button */}
-            <Button text="Add to Card" onPress = {() => {console.log("Added to Card")}} />
+            <Button text="Add to Card" onPress = {() => {console.log("Added to Card")}} containerStyles={{backgroundColor: '#e3c905'}}  />
             <Button text="Buy Now" onPress = {() => {console.log("Buying now")}} />
             
         </View> 
