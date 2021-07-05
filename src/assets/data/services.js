@@ -10,6 +10,7 @@ export const services  = [
         star: 2,
         star: 2,
         rating: 2,
+        images: ["/Users/eminkartci/Desktop/CodEnv/ReactECommerce/src/assets/images/matematik.jpg","/Users/eminkartci/Desktop/CodEnv/ReactECommerce/src/assets/images/java.png","https://gayeokullari.com.tr/img/etkinlikler/lgs_online_logo.png"]
     },
     {
         id: '2',
@@ -21,6 +22,7 @@ export const services  = [
         options: ["Beginner","Medium","Advanced"],
         star: 2,
         rating: 523,
+        images: ["/Users/eminkartci/Desktop/CodEnv/ReactECommerce/src/assets/images/matematik.jpg","/Users/eminkartci/Desktop/CodEnv/ReactECommerce/src/assets/images/java.png","https://gayeokullari.com.tr/img/etkinlikler/lgs_online_logo.png"]
     },
     {
         id: '3',
@@ -32,6 +34,7 @@ export const services  = [
         options: ["Beginner","Medium","Advanced"],
         star: 3,
         rating: 53,
+        images: ["/Users/eminkartci/Desktop/CodEnv/ReactECommerce/src/assets/images/matematik.jpg","/Users/eminkartci/Desktop/CodEnv/ReactECommerce/src/assets/images/java.png","https://gayeokullari.com.tr/img/etkinlikler/lgs_online_logo.png"]
     },
     {
         id: '4',
@@ -43,6 +46,7 @@ export const services  = [
         options: ["Beginner","Medium","Advanced"],
         star: 4,
         rating: 1223,
+        images: ["/Users/eminkartci/Desktop/CodEnv/ReactECommerce/src/assets/images/matematik.jpg","/Users/eminkartci/Desktop/CodEnv/ReactECommerce/src/assets/images/java.png","https://gayeokullari.com.tr/img/etkinlikler/lgs_online_logo.png"]
     },
     {
         id: '5',
@@ -54,5 +58,6 @@ export const services  = [
         options: ["Beginner","Medium","Advanced"],
         star: 5,
         rating: 2362,
+        images: ["/Users/eminkartci/Desktop/CodEnv/ReactECommerce/src/assets/images/matematik.jpg","/Users/eminkartci/Desktop/CodEnv/ReactECommerce/src/assets/images/java.png","https://gayeokullari.com.tr/img/etkinlikler/lgs_online_logo.png"]
     }
 ]

@@ -5,7 +5,7 @@ import { services } from '../../assets/data/services';
 import { Picker } from '@react-native-picker/picker';
 import QuantitiySelector from '../../components/QuantitiySelector';
 import Button from '../../components/Button';
-
+import ImageCarousel from '../../components/ImageCarousel';
 const ProductScreen = () => {
 
     const service = services[0];
@@ -21,6 +21,7 @@ const ProductScreen = () => {
             <Text style={styles.title} > {service.title} </Text>
 
             {/* Slider */}
+            <ImageCarousel images={service.images}/>
 
             {/* Options */}
             <Picker
