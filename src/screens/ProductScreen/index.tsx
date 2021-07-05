@@ -8,7 +8,9 @@ import QuantitiySelector from '../../components/QuantitiySelector';
 const ProductScreen = () => {
 
     const service = services[0];
-    const [selectedOption,setSelectedOption] = useState('')
+    const [selectedOption,setSelectedOption] = useState(service.options ? service.options[0] : null)
+    const [quantitiy,setQuantitiy] = useState(1)
+
     console.log('Selected Option: ', selectedOption);
 
     return (
@@ -41,7 +43,7 @@ const ProductScreen = () => {
             </Text>
 
             {/* Quantitiy Selection */}
-            <QuantitiySelector />
+            <QuantitiySelector quantitiy={quantitiy} setQuantitiy={setQuantitiy} />
 
             {/* Button */}
             
