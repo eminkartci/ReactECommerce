@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, FlatList } from 'react-native'
 import styles from './styles';
 import { services } from '../../assets/data/services';
 import { Picker } from '@react-native-picker/picker';
@@ -15,6 +15,7 @@ const ProductScreen = () => {
     console.log('Selected Option: ', selectedOption);
 
     return (
+
         <View style={styles.root}>
 
             {/* Title */}
